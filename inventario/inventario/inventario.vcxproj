@@ -132,6 +132,11 @@
       <DependentUpon>VentanaPrincipal.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\inventarioController\inventarioController.vcxproj">
+      <Project>{e03a9ca9-ab7f-3392-b2ed-44f6003011cc}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

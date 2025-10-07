@@ -4,6 +4,8 @@ Assembly inventario, Version=0.0.*, Culture=Invariant Language (Invariant Countr
 	hash=SHA1, flags=PublicKey
 Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Assembly inventarioController, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
 Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
@@ -19,5 +21,6 @@ Class inventario.VentanaPrincipal: AutoLayout, AnsiClass, Class, Public, BeforeF
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     System.Collections.Generic.List`1[System.Collections.Generic.List`1[System.String]] data : Public
+    inventarioController.usercontroller controlador_usuarios : Public
   Methods:
     read_persistent_data(): PrivateScope, Public, HideBySig

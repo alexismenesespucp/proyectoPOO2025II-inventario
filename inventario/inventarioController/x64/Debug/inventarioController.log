@@ -1,0 +1,4 @@
+﻿  userController.cpp
+C:\Users\alexis-pc\OneDrive\Documentos\Programacion orientada a objetos\proyectoPOO2025II-inventario\inventario\inventarioController\userController.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  categoriaController.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  inventarioController.vcxproj -> C:\Users\alexis-pc\OneDrive\Documentos\Programacion orientada a objetos\proyectoPOO2025II-inventario\inventario\x64\Debug\inventarioController.dll

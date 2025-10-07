@@ -1,0 +1,2 @@
+C:\Users\alexis-pc\OneDrive\Documentos\Programacion orientada a objetos\proyectoPOO2025II-inventario\inventario\inventarioController\x64\Debug\inventarioController.vcxproj.AssemblyReference.cache
+C:\Users\alexis-pc\OneDrive\Documentos\Programacion orientada a objetos\proyectoPOO2025II-inventario\inventario\inventarioController\x64\Debug\inventar.1BD1270C.Up2Date

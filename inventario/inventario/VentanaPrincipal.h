@@ -10,6 +10,7 @@ namespace inventario {
 	using namespace System::Drawing;
 	using namespace System::IO;
 	using namespace System::Collections::Generic;
+	using namespace inventarioController;
 
 	/// <summary>
 	/// Summary for MyForm
@@ -18,6 +19,7 @@ namespace inventario {
 	{
 	public:
 		List<List<String^>^>^ data = gcnew List<List<String^>^>();
+		usercontroller^ controlador_usuarios = gcnew usercontroller();
 		VentanaPrincipal(void)
 		{
 			InitializeComponent();
@@ -172,9 +174,12 @@ namespace inventario {
 			while (true) {
 				String^ linea = lector->ReadLine();
 				if (linea == nullptr) break;
-				Console::WriteLine("Se ha leído la información: " + linea);
 				array<String^>^ values = linea->Split(',');
-				
+				if (values->Length == 1) continue;
+				String^ id = values[0];
+				String^ name = values[1];
+				String^ position = values[2];
+				controlador_usuarios->createUser(id, name, position);
 				List<String^>^ stringvalues = gcnew List<String^>();
 				bool firstitem = true;
 				for each (String ^val in values) {
@@ -185,16 +190,13 @@ namespace inventario {
 					stringvalues->Add(val);
 				}
 				data->Add(stringvalues);
-				this->textBox1->Text += "\n" + linea;
+				this->textBox1->Text += linea+ "\n";
 			}
 			lector->Close();
 			archivo->Close();
 		}
 
 private: System::Void exitToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-
-	
-
 	FileStream^ archivo;
 	archivo = gcnew FileStream("archivo.txt", FileMode::Create, FileAccess::Write);
 	StreamWriter^ escritor = gcnew StreamWriter(archivo);

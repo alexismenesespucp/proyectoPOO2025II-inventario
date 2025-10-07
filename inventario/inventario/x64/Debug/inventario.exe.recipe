@@ -2,6 +2,12 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Programacion orientada a objetos\proyectoPOO2025II-inventario\inventario\x64\Debug\inventarioModel.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Programacion orientada a objetos\proyectoPOO2025II-inventario\inventario\x64\Debug\inventarioController.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\Users\alexis-pc\OneDrive\Documentos\Programacion orientada a objetos\proyectoPOO2025II-inventario\inventario\x64\Debug\inventario.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
